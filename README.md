@@ -13,6 +13,14 @@ build the LGPL noise again from permissive parts.
 All values are Q31.32 (`int64`, 32 fractional bits). The Solidity, TypeScript
 and Rust implementations give identical values.
 
+## Deployed contracts
+
+Each link opens the contract on Etherscan.
+
+| Contract | Mainnet | Sepolia |
+|---|---|---|
+| `Trig256` | [`0x9905c8152a46FDdD62e935CF496DBff3B65124d8`](https://etherscan.io/address/0x9905c8152a46FDdD62e935CF496DBff3B65124d8#code) | [`0xAF8f886Df2285a4Ca847AAA1a3223d420d79e886`](https://sepolia.etherscan.io/address/0xAF8f886Df2285a4Ca847AAA1a3223d420d79e886#code) |
+
 ## The deployed bytecode
 
 Only `Trig256` deploys as its own contract. It has `public` log and exp
