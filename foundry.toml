@@ -1,0 +1,28 @@
+# kohi-fixmath: the build for reproducible bytecode.
+#
+# These settings reproduce, byte for byte, the deployed Fix64 / Trig256 /
+# SinLut256 bytecode. Do not change solc_version, evm_version, optimizer,
+# optimizer_runs, via_ir, bytecode_hash or cbor_metadata unless you check the
+# recorded hashes in docs/ again. A change to these settings changes the code
+# that a deployment puts at its address, and the build gives no warning.
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+# Remove the CBOR metadata appendix. Then the runtime bytecode does not depend
+# on paths or comments. Explorers compile the source again to verify it. They
+# do not use this hash.
+bytecode_hash = "none"
+cbor_metadata = false
+gas_limit = "9223372036854775807"
+fs_permissions = [{ access = "read", path = "./test/golden" }]
+
+[rpc_endpoints]
+mainnet = "${MAINNET_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"

@@ -1,0 +1,6 @@
+# Keep the line endings deterministic. The proof of reproducible bytecode needs
+# sources that are byte-identical on each platform.
+* text=auto eol=lf
+*.sol text eol=lf
+*.rs  text eol=lf
+*.ts  text eol=lf

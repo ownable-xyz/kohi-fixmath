@@ -1,0 +1,25 @@
+{
+  "name": "kohi-fixmath",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Permissive (MIT) Q31.32 fixed-point math (Fix64 / Trig256 / SinLut256). It is standalone, so downstream units link to it and do not inline it. The LGPL noise and the KVM use it as their base.",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "goldens": "tsx tools/gen-goldens.ts",
+    "check:ts": "tsx tools/agreement-ts.ts",
+    "check:rust": "cargo test --manifest-path rust/Cargo.toml",
+    "check:bytecode": "node tools/check-bytecode.mjs",
+    "fork-verify": "node deploy/fork-verify.mjs",
+    "vet": "npm run goldens && npm run check:ts && npm run check:rust && npm run check:bytecode && forge test && npm run fork-verify",
+    "deploy": "node deploy/kohi-deploy.mjs"
+  },
+  "dependencies": {
+    "viem": "2.54.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}

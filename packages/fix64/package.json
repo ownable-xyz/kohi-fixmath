@@ -1,0 +1,30 @@
+{
+  "name": "@kohi/fix64",
+  "version": "0.1.0",
+  "description": "Fix64: signed Q31.32 fixed-point math (Fix64 / Trig256 / SinLut256). It is a bit-for-bit port of Kohi's Solidity libraries, which are adaptations of FixedMath.Net and libfixmath. It is the base of determinism for the KVM.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ownable-xyz/kohi-fixmath.git",
+    "directory": "packages/fix64"
+  },
+  "keywords": [
+    "fixed-point",
+    "q31.32",
+    "deterministic",
+    "math",
+    "libfixmath"
+  ],
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false
+}

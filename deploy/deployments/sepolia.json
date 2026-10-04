@@ -1,0 +1,12 @@
+{
+  "network": "sepolia",
+  "Trig256": {
+    "address": "0xAF8f886Df2285a4Ca847AAA1a3223d420d79e886",
+    "txHash": "0xe75197be93629d10df351298eb69b366f67c36ada50cb98d2437d54174bf6f4e",
+    "block": 11308710,
+    "deployer": "0xAFA08732b9A1D334686B0ca5f6D9B9C6953993B0",
+    "templateSha256": "9e4d0e8e8712c70230085669c170a45ff58f243b3ded1b0bf4fc9a0f3ec9645d",
+    "sourceVerified": true,
+    "at": "2026-07-19T22:37:25.439Z"
+  }
+}

@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+[package]
+name = "kohi-fixmath"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Permissive Q31.32 fixed-point math (Fix64 / Trig256 / SinLut256), value-identical to the Solidity and TypeScript ports."
+publish = false
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

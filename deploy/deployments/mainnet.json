@@ -1,0 +1,12 @@
+{
+  "network": "mainnet",
+  "Trig256": {
+    "address": "0x9905c8152a46FDdD62e935CF496DBff3B65124d8",
+    "txHash": "0xa0b17d20622c2021bc83705dc1355e0b68623e786de92b35d30ed988f50d10e4",
+    "block": 25550100,
+    "deployer": "0xAFA08732b9A1D334686B0ca5f6D9B9C6953993B0",
+    "templateSha256": "9e4d0e8e8712c70230085669c170a45ff58f243b3ded1b0bf4fc9a0f3ec9645d",
+    "sourceVerified": true,
+    "at": "2026-07-17T04:45:51.277Z"
+  }
+}
